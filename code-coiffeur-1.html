@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- ============================================================
+       META SEO
+  ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>Atelier Lumière – Salon de Coiffure à Malestroit | Coiffeur Morbihan</title>
+  <meta name="description" content="Atelier Lumière, votre salon de coiffure premium à Malestroit (56140). Coupe homme, coupe femme, coloration, balayage, soins capillaires. Prenez rendez-vous dès aujourd'hui." />
+  <meta name="keywords" content="salon de coiffure Malestroit, coiffeur Malestroit, coiffure homme femme Malestroit, salon de coiffure Morbihan, balayage Malestroit, coloration Morbihan" />
+  <meta name="author" content="Atelier Lumière" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://atelier-lumiere-malestroit.fr/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Atelier Lumière – Salon de Coiffure à Malestroit" />
+  <meta property="og:description" content="Coiffeur premium à Malestroit. Coupes, colorations, soins. Prenez rendez-vous en ligne." />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Atelier Lumière" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Atelier Lumière – Salon de Coiffure à Malestroit" />
+  <meta name="twitter:description" content="Votre salon de coiffure premium à Malestroit, Morbihan." />
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Atelier Lumière",
+    "description": "Salon de coiffure premium à Malestroit, Morbihan.",
+    "url": "https://atelier-lumiere-malestroit.fr/",
+    "telephone": "+33-2-97-74-XX-XX",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12 Place du Bouffay",
+      "addressLocality": "Malestroit",
+      "postalCode": "56140",
+      "addressCountry": "FR"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "17:00" }
+    ],
+    "priceRange": "€€"
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- ============================================================
+       STYLES
+  ============================================================ -->
+  <style>
+    /* ── Variables ── */
+    :root {
+      --c-bg:        #FAFAF9;
+      --c-white:     #FFFFFF;
+      --c-grey-50:   #F4F3F1;
+      --c-grey-100:  #E8E6E2;
+      --c-grey-300:  #B8B4AE;
+      --c-grey-500:  #7A756D;
+      --c-grey-700:  #3D3A35;
+      --c-text:      #201E1B;
+      --c-violet:    #3D2B5E;
+      --c-violet-lt: #5A4080;
+      --c-violet-xlt:#EDE8F5;
+      --c-gold:      #C9A96E;
+
+      --ff-display: 'Cormorant Garamond', Georgia, serif;
+      --ff-body:    'Jost', sans-serif;
+
+      --radius-sm:   6px;
+      --radius-md:   14px;
+      --radius-lg:   28px;
+      --shadow-card: 0 4px 32px rgba(61,43,94,.08);
+      --shadow-hover: 0 12px 48px rgba(61,43,94,.16);
+
+      --ease: cubic-bezier(.4,0,.2,1);
+      --dur:  .35s;
+    }
+
+    /* ── Reset ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--ff-body);
+      background: var(--c-bg);
+      color: var(--c-text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a  { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    button, input, textarea, select { font-family: inherit; }
+
+    /* ── Utility ── */
+    .container {
+      max-width: 1160px;
+      margin-inline: auto;
+      padding-inline: clamp(1.25rem, 5vw, 3rem);
+    }
+    .section-tag {
+      display: inline-block;
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--c-gold);
+      margin-bottom: 1rem;
+    }
+    .section-title {
+      font-family: var(--ff-display);
+      font-weight: 400;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.15;
+      color: var(--c-violet);
+    }
+    .section-lead {
+      font-size: 1.05rem;
+      color: var(--c-grey-500);
+      max-width: 56ch;
+      margin-top: .75rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      padding: .85rem 2rem;
+      border-radius: 50px;
+      font-size: .9rem;
+      font-weight: 500;
+      letter-spacing: .06em;
+      cursor: pointer;
+      transition: background var(--dur) var(--ease),
+                  color var(--dur) var(--ease),
+                  box-shadow var(--dur) var(--ease),
+                  transform var(--dur) var(--ease);
+      border: none;
+    }
+    .btn-primary {
+      background: var(--c-violet);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: var(--c-violet-lt);
+      box-shadow: 0 8px 28px rgba(61,43,94,.35);
+      transform: translateY(-2px);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--c-violet);
+      border: 1.5px solid var(--c-violet);
+    }
+    .btn-outline:hover {
+      background: var(--c-violet);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+    .btn-light {
+      background: rgba(255,255,255,.15);
+      color: #fff;
+      border: 1.5px solid rgba(255,255,255,.5);
+      backdrop-filter: blur(8px);
+    }
+    .btn-light:hover {
+      background: rgba(255,255,255,.28);
+      transform: translateY(-2px);
+    }
+    /* Arrow icon inside button */
+    .btn svg { transition: transform var(--dur) var(--ease); }
+    .btn:hover svg { transform: translateX(4px); }
+
+    /* ── Fade-in animation ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .65s var(--ease), transform .65s var(--ease);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: .1s; }
+    .reveal-delay-2 { transition-delay: .2s; }
+    .reveal-delay-3 { transition-delay: .3s; }
+    .reveal-delay-4 { transition-delay: .4s; }
+
+    /* ── Divider ── */
+    .ornament {
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      margin-block: 1.5rem;
+    }
+    .ornament span { display: block; height: 1px; flex: 1; background: var(--c-grey-100); }
+    .ornament i { font-style: normal; color: var(--c-gold); font-size: 1.2rem; }
+
+    /* ======================================================
+       NAV
+    ====================================================== */
+    #navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 999;
+      padding: 1.2rem 0;
+      transition: background var(--dur) var(--ease),
+                  box-shadow var(--dur) var(--ease),
+                  padding var(--dur) var(--ease);
+    }
+    #navbar.scrolled {
+      background: rgba(250,250,249,.96);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 2px 20px rgba(0,0,0,.06);
+      padding: .8rem 0;
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: var(--ff-display);
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: var(--c-white);
+      letter-spacing: .03em;
+      transition: color var(--dur) var(--ease);
+    }
+    #navbar.scrolled .nav-logo { color: var(--c-violet); }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    .nav-links a {
+      font-size: .85rem;
+      font-weight: 400;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.85);
+      position: relative;
+      transition: color var(--dur) var(--ease);
+    }
+    #navbar.scrolled .nav-links a { color: var(--c-grey-700); }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -3px; left: 0;
+      width: 0; height: 1px;
+      background: var(--c-gold);
+      transition: width var(--dur) var(--ease);
+    }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-links a:hover { color: var(--c-gold) !important; }
+    .nav-cta {
+      padding: .6rem 1.4rem !important;
+      font-size: .82rem !important;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      background: var(--c-gold) !important;
+      color: #fff !important;
+      border-radius: 50px;
+      transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease) !important;
+    }
+    .nav-cta:hover { opacity: .88; transform: translateY(-2px) !important; }
+    .nav-cta::after { display: none !important; }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: .4rem;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px; height: 1.5px;
+      background: #fff;
+      transition: all var(--dur) var(--ease);
+    }
+    #navbar.scrolled .hamburger span { background: var(--c-violet); }
+    .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(4px,5px); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(4px,-5px); }
+
+    /* Mobile menu */
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      gap: 0;
+      background: var(--c-white);
+      position: absolute;
+      top: 100%; left: 0; right: 0;
+      padding: 1rem 0 1.5rem;
+      box-shadow: 0 8px 32px rgba(0,0,0,.1);
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      padding: .8rem 2rem;
+      font-size: .95rem;
+      color: var(--c-grey-700);
+      letter-spacing: .05em;
+      border-bottom: 1px solid var(--c-grey-100);
+    }
+    .mobile-menu a:last-child { border-bottom: none; }
+    .mobile-menu a:hover { color: var(--c-violet); background: var(--c-grey-50); }
+
+    /* ======================================================
+       HERO
+    ====================================================== */
+    #hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1800&auto=format&fit=crop&q=80') center/cover no-repeat;
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(30,18,50,.82) 0%,
+        rgba(45,28,80,.68) 50%,
+        rgba(20,12,36,.75) 100%
+      );
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding-block: 8rem 5rem;
+    }
+    .hero-eyebrow {
+      font-size: .78rem;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      color: var(--c-gold);
+      margin-bottom: 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 36px; height: 1px;
+      background: var(--c-gold);
+    }
+    .hero-title {
+      font-family: var(--ff-display);
+      font-weight: 300;
+      font-size: clamp(3rem, 7vw, 6rem);
+      line-height: 1.05;
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--c-gold);
+    }
+    .hero-subtitle {
+      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      color: rgba(255,255,255,.72);
+      max-width: 42ch;
+      margin-bottom: 2.5rem;
+      font-weight: 300;
+      line-height: 1.8;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 3.5rem;
+    }
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .hero-badge {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      color: rgba(255,255,255,.65);
+      font-size: .82rem;
+      letter-spacing: .05em;
+    }
+    .hero-badge svg { color: var(--c-gold); flex-shrink: 0; }
+
+    /* Scroll indicator */
+    .scroll-hint {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .4rem;
+      color: rgba(255,255,255,.45);
+      font-size: .72rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      animation: bounceDown 2.2s infinite;
+    }
+    .scroll-hint svg { color: rgba(255,255,255,.45); }
+    @keyframes bounceDown {
+      0%,100% { transform: translateX(-50%) translateY(0); }
+      50%      { transform: translateX(-50%) translateY(6px); }
+    }
+
+    /* ======================================================
+       ABOUT
+    ====================================================== */
+    #about {
+      padding-block: clamp(4rem, 8vw, 7rem);
+      background: var(--c-white);
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2rem, 5vw, 5rem);
+      align-items: center;
+    }
+    .about-img-wrap {
+      position: relative;
+    }
+    .about-img-main {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-card);
+    }
+    .about-img-accent {
+      position: absolute;
+      bottom: -2rem;
+      right: -2rem;
+      width: 45%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+      border: 5px solid var(--c-white);
+      box-shadow: var(--shadow-hover);
+    }
+    .about-badge {
+      position: absolute;
+      top: 1.5rem;
+      left: -1.5rem;
+      background: var(--c-violet);
+      color: #fff;
+      padding: 1.2rem 1.4rem;
+      border-radius: var(--radius-md);
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(61,43,94,.3);
+    }
+    .about-badge strong {
+      display: block;
+      font-family: var(--ff-display);
+      font-size: 2.2rem;
+      font-weight: 400;
+      line-height: 1;
+    }
+    .about-badge span {
+      font-size: .72rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      opacity: .75;
+    }
+    .about-text p { color: var(--c-grey-500); margin-top: .9rem; line-height: 1.85; }
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .about-stat {
+      background: var(--c-grey-50);
+      padding: 1.2rem 1.4rem;
+      border-radius: var(--radius-md);
+      border-left: 3px solid var(--c-gold);
+    }
+    .about-stat strong {
+      font-family: var(--ff-display);
+      font-size: 2rem;
+      font-weight: 400;
+      color: var(--c-violet);
+      display: block;
+      line-height: 1;
+    }
+    .about-stat span {
+      font-size: .8rem;
+      color: var(--c-grey-500);
+      letter-spacing: .06em;
+    }
+
+    /* ======================================================
+       SERVICES
+    ====================================================== */
+    #services {
+      padding-block: clamp(4rem, 8vw, 7rem);
+      background: var(--c-grey-50);
+    }
+    .services-header { text-align: center; margin-bottom: 3.5rem; }
+    .services-header .section-lead { margin-inline: auto; }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+      gap: 1.5rem;
+    }
+    .service-card {
+      background: var(--c-white);
+      border-radius: var(--radius-md);
+      padding: 2rem 1.8rem;
+      box-shadow: var(--shadow-card);
+      transition: transform var(--dur) var(--ease),
+                  box-shadow var(--dur) var(--ease);
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--c-violet), var(--c-gold));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform var(--dur) var(--ease);
+    }
+    .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-icon {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      background: var(--c-violet-xlt);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.2rem;
+      transition: background var(--dur) var(--ease);
+    }
+    .service-card:hover .service-icon { background: var(--c-violet); }
+    .service-icon svg { color: var(--c-violet); transition: color var(--dur) var(--ease); }
+    .service-card:hover .service-icon svg { color: #fff; }
+    .service-card h3 {
+      font-family: var(--ff-display);
+      font-size: 1.35rem;
+      font-weight: 500;
+      color: var(--c-text);
+      margin-bottom: .5rem;
+    }
+    .service-card p { font-size: .9rem; color: var(--c-grey-500); line-height: 1.75; }
+    .service-price {
+      display: inline-block;
+      margin-top: .9rem;
+      font-size: .8rem;
+      font-weight: 500;
+      letter-spacing: .08em;
+      color: var(--c-gold);
+      text-transform: uppercase;
+    }
+
+    /* ======================================================
+       WHY US
+    ====================================================== */
+    #why {
+      padding-block: clamp(4rem, 8vw, 7rem);
+      background: var(--c-white);
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2rem, 5vw, 5rem);
+      align-items: center;
+    }
+    .why-img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-card);
+    }
+    .why-list { display: flex; flex-direction: column; gap: 1.6rem; margin-top: 2rem; }
+    .why-item {
+      display: flex;
+      gap: 1.2rem;
+      align-items: flex-start;
+    }
+    .why-dot {
+      flex-shrink: 0;
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: var(--c-violet-xlt);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: .1rem;
+    }
+    .why-dot svg { color: var(--c-violet); }
+    .why-item h3 {
+      font-family: var(--ff-display);
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--c-text);
+      margin-bottom: .25rem;
+    }
+    .why-item p { font-size: .88rem; color: var(--c-grey-500); line-height: 1.7; }
+
+    /* ======================================================
+       GALLERY
+    ====================================================== */
+    #gallery {
+      padding-block: clamp(4rem, 8vw, 7rem);
+      background: var(--c-violet);
+      position: relative;
+      overflow: hidden;
+    }
+    #gallery::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 380px; height: 380px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.04);
+      pointer-events: none;
+    }
+    .gallery-header { color: #fff; margin-bottom: 2.5rem; }
+    .gallery-header .section-title { color: #fff; }
+    .gallery-header .section-lead { color: rgba(255,255,255,.6); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 260px 260px;
+      gap: 1rem;
+    }
+    .gallery-item { overflow: hidden; border-radius: var(--radius-md); }
+    .gallery-item:nth-child(1) { grid-column: span 5; grid-row: span 2; }
+    .gallery-item:nth-child(2) { grid-column: span 4; }
+    .gallery-item:nth-child(3) { grid-column: span 3; }
+    .gallery-item:nth-child(4) { grid-column: span 3; }
+    .gallery-item:nth-child(5) { grid-column: span 4; }
+    .gallery-item img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform .55s var(--ease), filter .55s var(--ease);
+      filter: saturate(.9);
+    }
+    .gallery-item:hover img { transform: scale(1.07); filter: saturate(1.1); }
+
+    /* ======================================================
+       MAP
+    ====================================================== */
+    #localisation {
+      padding-block: clamp(4rem, 8vw, 7rem);
+      background: var(--c-white);
+    }
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: clamp(2rem, 4vw, 4rem);
+      align-items: start;
+    }
+    .location-info h2 {
+      font-family: var(--ff-display);
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 400;
+      color: var(--c-violet);
+      margin-bottom: 1rem;
+    }
+    .location-info p { color: var(--c-grey-500); font-size: .95rem; line-height: 1.8; }
+    .location-details { margin-top: 1.8rem; display: flex; flex-direction: column; gap: 1rem; }
+    .location-row {
+      display: flex;
+      gap: .9rem;
+      align-items: flex-start;
+    }
+    .location-row svg { color: var(--c-gold); flex-shrink: 0; margin-top: .15rem; }
+    .location-row div { font-size: .9rem; color: var(--c-grey-700); }
+    .location-row div strong { display: block; font-weight: 500; color: var(--c-text); margin-bottom: .15rem; }
+    .horaires-table { width: 100%; border-collapse: collapse; font-size: .88rem; margin-top: .4rem; }
+    .horaires-table tr + tr td { border-top: 1px solid var(--c-grey-100); }
+    .horaires-table td { padding: .35rem 0; color: var(--c-grey-500); }
+    .horaires-table td:last-child { text-align: right; color: var(--c-text); }
+    .map-wrap {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      aspect-ratio: 16/10;
+      background: var(--c-grey-50);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1rem;
+      border: 2px dashed var(--c-grey-100);
+    }
+    .map-placeholder-icon svg { color: var(--c-grey-300); }
+    .map-placeholder-text {
+      font-size: .85rem;
+      color: var(--c-grey-300);
+      text-align: center;
+      max-width: 28ch;
+      line-height: 1.6;
+    }
+    .map-placeholder-code {
+      background: var(--c-grey-50);
+      border: 1px solid var(--c-grey-100);
+      border-radius: var(--radius-sm);
+      padding: .4rem .8rem;
+      font-family: monospace;
+      font-size: .75rem;
+      color: var(--c-violet);
+    }
+
+    /* ======================================================
+       CONTACT
+    ====================================================== */
+    #contact {
+      padding-block: clamp(4rem, 8vw, 7rem);
+      background: var(--c-grey-50);
+    }
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: clamp(2rem, 5vw, 5rem);
+      align-items: start;
+    }
+    .contact-aside h2 {
+      font-family: var(--ff-display);
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 400;
+      color: var(--c-violet);
+      margin-bottom: .8rem;
+    }
+    .contact-aside p { color: var(--c-grey-500); font-size: .95rem; line-height: 1.8; }
+    .contact-links { margin-top: 1.5rem; display: flex; flex-direction: column; gap: .8rem; }
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--c-grey-700);
+      font-size: .9rem;
+      transition: color var(--dur) var(--ease);
+    }
+    .contact-link svg { color: var(--c-gold); }
+    .contact-link:hover { color: var(--c-violet); }
+
+    /* Form */
+    .contact-form {
+      background: var(--c-white);
+      border-radius: var(--radius-lg);
+      padding: clamp(2rem, 4vw, 3rem);
+      box-shadow: var(--shadow-card);
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .form-group { display: flex; flex-direction: column; gap: .4rem; margin-bottom: 1.1rem; }
+    .form-group label {
+      font-size: .78rem;
+      font-weight: 500;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--c-grey-500);
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: .8rem 1rem;
+      border: 1.5px solid var(--c-grey-100);
+      border-radius: var(--radius-sm);
+      font-size: .92rem;
+      color: var(--c-text);
+      background: var(--c-white);
+      transition: border-color var(--dur) var(--ease),
+                  box-shadow var(--dur) var(--ease);
+      outline: none;
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: var(--c-grey-300); }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--c-violet);
+      box-shadow: 0 0 0 3px rgba(61,43,94,.1);
+    }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+    .form-submit { width: 100%; justify-content: center; font-size: .95rem; padding: 1rem; }
+
+    /* ======================================================
+       FOOTER
+    ====================================================== */
+    #footer {
+      background: var(--c-text);
+      color: rgba(255,255,255,.65);
+      padding-block: 3.5rem 2rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr 1fr;
+      gap: clamp(2rem, 4vw, 3.5rem);
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .footer-brand .logo {
+      font-family: var(--ff-display);
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: .7rem;
+    }
+    .footer-brand p { font-size: .88rem; line-height: 1.8; max-width: 30ch; }
+    .footer-social {
+      display: flex;
+      gap: .7rem;
+      margin-top: 1.4rem;
+    }
+    .footer-social a {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,.6);
+      transition: background var(--dur) var(--ease),
+                  color var(--dur) var(--ease),
+                  border-color var(--dur) var(--ease);
+    }
+    .footer-social a:hover {
+      background: var(--c-gold);
+      border-color: var(--c-gold);
+      color: #fff;
+    }
+    .footer-col h4 {
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.35);
+      margin-bottom: 1.1rem;
+    }
+    .footer-col ul { display: flex; flex-direction: column; gap: .55rem; }
+    .footer-col ul li a {
+      font-size: .88rem;
+      transition: color var(--dur) var(--ease);
+    }
+    .footer-col ul li a:hover { color: var(--c-gold); }
+    .footer-col address { font-style: normal; font-size: .88rem; line-height: 1.85; }
+    .footer-bottom {
+      padding-top: 1.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: .75rem;
+      font-size: .78rem;
+    }
+    .footer-bottom a:hover { color: var(--c-gold); }
+
+    /* ======================================================
+       RESPONSIVE
+    ====================================================== */
+    @media (max-width: 1024px) {
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+      }
+      .gallery-item { grid-column: span 1 !important; grid-row: span 1 !important; height: 220px; }
+      .gallery-item:first-child { grid-column: span 2 !important; height: 280px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .about-grid,
+      .why-grid,
+      .location-grid,
+      .contact-wrapper { grid-template-columns: 1fr; }
+      .about-img-accent { display: none; }
+      .about-badge { left: 1rem; top: 1rem; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-item:first-child { height: 220px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title { font-size: 2.6rem; }
+      .hero-actions { flex-direction: column; }
+      .about-stats { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-item:first-child { grid-column: span 1 !important; }
+      .footer-bottom { text-align: center; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav id="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Atelier Lumière – Accueil">Atelier Lumière</a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about">Le salon</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Galerie</a></li>
+        <li><a href="#localisation">Accès</a></li>
+        <li><a href="#contact" class="nav-cta">Rendez-vous</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" role="menu">
+      <a href="#about" role="menuitem">Le salon</a>
+      <a href="#services" role="menuitem">Services</a>
+      <a href="#gallery" role="menuitem">Galerie</a>
+      <a href="#localisation" role="menuitem">Accès</a>
+      <a href="#contact" role="menuitem">Rendez-vous</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section id="hero" aria-labelledby="hero-heading">
+    <div class="hero-bg" role="img" aria-label="Intérieur du salon de coiffure Atelier Lumière à Malestroit"></div>
+
+    <div class="container hero-content">
+      <p class="hero-eyebrow reveal">Salon de coiffure · Malestroit, Morbihan</p>
+
+      <!-- H1 SEO -->
+      <h1 id="hero-heading" class="hero-title reveal reveal-delay-1">
+        L'art de révéler<br><em>votre beauté</em>
+      </h1>
+
+      <p class="hero-subtitle reveal reveal-delay-2">
+        Bienvenue à l'Atelier Lumière, votre salon de coiffure premium à Malestroit.
+        Coupes, colorations et soins pensés pour chaque personnalité.
+      </p>
+
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="#contact" class="btn btn-primary">
+          Prendre rendez-vous
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="#services" class="btn btn-light">Découvrir nos services</a>
+      </div>
+
+      <div class="hero-badges reveal reveal-delay-4">
+        <span class="hero-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          +10 ans d'expérience
+        </span>
+        <span class="hero-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Malestroit, Morbihan
+        </span>
+        <span class="hero-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Produits professionnels
+        </span>
+      </div>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      Découvrir
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT – Présentation du salon
+  ============================================================ -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Image side -->
+        <div class="about-img-wrap reveal">
+          <img
+            class="about-img-main"
+            src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=800&auto=format&fit=crop&q=80"
+            alt="Coiffeuse au travail dans le salon Atelier Lumière à Malestroit"
+            loading="lazy"
+            width="640"
+            height="800"
+          />
+          <img
+            class="about-img-accent"
+            src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=400&auto=format&fit=crop&q=80"
+            alt="Détail d'une coiffure soignée réalisée à l'Atelier Lumière"
+            loading="lazy"
+            width="300"
+            height="300"
+          />
+          <div class="about-badge">
+            <strong>10+</strong>
+            <span>années<br>d'expertise</span>
+          </div>
+        </div>
+
+        <!-- Text side -->
+        <div class="about-text reveal reveal-delay-2">
+          <span class="section-tag">Notre salon</span>
+          <!-- H2 SEO -->
+          <h2 id="about-heading" class="section-title">
+            Un salon de coiffure premium<br>au cœur de Malestroit
+          </h2>
+
+          <div class="ornament" aria-hidden="true">
+            <span></span><i>✦</i><span></span>
+          </div>
+
+          <p>
+            Fondé en 2014 par Élodie Mercier, l'Atelier Lumière est né d'une passion profonde
+            pour la coiffure et le soin de soi. Situé au cœur de Malestroit, notre salon
+            vous accueille dans un cadre moderne et apaisant, pensé pour vous faire vivre
+            une parenthèse de bien-être.
+          </p>
+          <p>
+            Notre équipe de coiffeurs expérimentés met son savoir-faire à votre service pour
+            sublimer chaque profil. Que vous soyez à la recherche d'une coupe audacieuse,
+            d'une coloration naturelle ou d'un soin capillaire régénérant, nous adaptons
+            chaque prestation à vos envies et à la nature de vos cheveux.
+          </p>
+          <p>
+            Nous travaillons exclusivement avec des marques professionnelles — L'Oréal
+            Professionnel, Kérastase et Redken — pour garantir un résultat irréprochable
+            et respectueux de la santé de votre chevelure.
+          </p>
+
+          <div class="about-stats">
+            <div class="about-stat">
+              <strong>+1 200</strong>
+              <span>clients fidèles</span>
+            </div>
+            <div class="about-stat">
+              <strong>4</strong>
+              <span>coiffeurs experts</span>
+            </div>
+            <div class="about-stat">
+              <strong>100%</strong>
+              <span>produits pros</span>
+            </div>
+            <div class="about-stat">
+              <strong>4,9★</strong>
+              <span>note Google</span>
+            </div>
+          </div>
+
+          <div style="margin-top:2rem;">
+            <a href="#contact" class="btn btn-outline">
+              Prendre rendez-vous
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES
+  ============================================================ -->
+  <section id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="services-header reveal">
+        <span class="section-tag">Ce que nous faisons</span>
+        <!-- H2 SEO -->
+        <h2 id="services-heading" class="section-title">
+          Nos prestations de coiffure
+        </h2>
+        <p class="section-lead">
+          De la coupe aux soins capillaires, chaque prestation est réalisée avec soin
+          et adaptée à votre personnalité — hommes, femmes, enfants.
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Service 1 -->
+        <article class="service-card reveal" aria-labelledby="svc-femme">
+          <div class="service-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M12 12v8"/><path d="M8 20h8"/></svg>
+          </div>
+          <h3 id="svc-femme">Coupe femme</h3>
+          <p>Coupe personnalisée, brushing ou mise en plis. Nous étudions la forme de votre visage pour sublimer votre silhouette et votre style.</p>
+          <span class="service-price">À partir de 38 €</span>
+        </article>
+
+        <!-- Service 2 -->
+        <article class="service-card reveal reveal-delay-1" aria-labelledby="svc-homme">
+          <div class="service-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h3 id="svc-homme">Coupe homme</h3>
+          <p>Coupe classique, dégradé ou coupe tendance. Shampoing et finition inclus. Un résultat net et soigné pour toutes les occasions.</p>
+          <span class="service-price">À partir de 22 €</span>
+        </article>
+
+        <!-- Service 3 -->
+        <article class="service-card reveal reveal-delay-2" aria-labelledby="svc-coloration">
+          <div class="service-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/><circle cx="7" cy="12" r="1"/><circle cx="10" cy="8" r="1"/><circle cx="14" cy="8" r="1"/><circle cx="17" cy="12" r="1"/></svg>
+          </div>
+          <h3 id="svc-coloration">Coloration</h3>
+          <p>Coloration pleine tête, racines ou effet naturel. Produits L'Oréal Professionnel longue durée pour une couleur éclatante et tenue.</p>
+          <span class="service-price">À partir de 55 €</span>
+        </article>
+
+        <!-- Service 4 -->
+        <article class="service-card reveal" aria-labelledby="svc-balayage">
+          <div class="service-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h4l1 9h8l1-9h4"/><path d="M7.5 12a4.5 4.5 0 0 0 9 0"/></svg>
+          </div>
+          <h3 id="svc-balayage">Balayage &amp; Mèches</h3>
+          <p>Balayage californien, mèches ou tie-and-dye pour un effet lumineux et naturel. Technique maîtrisée par nos coloristes expérimentées.</p>
+          <span class="service-price">À partir de 70 €</span>
+        </article>
+
+        <!-- Service 5 -->
+        <article class="service-card reveal reveal-delay-1" aria-labelledby="svc-barbe">
+          <div class="service-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12s1-7 9-7 9 7 9 7"/><path d="M3 12v4a9 9 0 0 0 18 0v-4"/><path d="M8 19s0 2 4 2 4-2 4-2"/></svg>
+          </div>
+          <h3 id="svc-barbe">Taille de barbe</h3>
+          <p>Taille et mise en forme de la barbe au rasoir ou tondeuse. Finition à la serviette chaude pour un résultat impeccable et confortable.</p>
+          <span class="service-price">À partir de 15 €</span>
+        </article>
+
+        <!-- Service 6 -->
+        <article class="service-card reveal reveal-delay-2" aria-labelledby="svc-soins">
+          <div class="service-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+          </div>
+          <h3 id="svc-soins">Soins capillaires</h3>
+          <p>Masques nourrissants, kératine, soins Kérastase ou Redken. Traitements ciblés contre la casse, la sécheresse ou le frisottis.</p>
+          <span class="service-price">À partir de 28 €</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHY US – Pourquoi choisir notre salon
+  ============================================================ -->
+  <section id="why" aria-labelledby="why-heading">
+    <div class="container">
+      <div class="why-grid">
+
+        <div class="reveal">
+          <img
+            class="why-img"
+            src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?w=800&auto=format&fit=crop&q=80"
+            alt="Coiffeuse professionnelle en train de réaliser une coupe dans le salon de Malestroit"
+            loading="lazy"
+            width="600"
+            height="800"
+          />
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <span class="section-tag">Nos engagements</span>
+          <!-- H2 SEO -->
+          <h2 id="why-heading" class="section-title">
+            Pourquoi choisir<br>l'Atelier Lumière ?
+          </h2>
+          <p class="section-lead">
+            Nous mettons tout en œuvre pour que chaque visite soit une expérience unique,
+            personnalisée et mémorable.
+          </p>
+
+          <ul class="why-list" role="list">
+            <!-- Item 1 -->
+            <li class="why-item">
+              <div class="why-dot" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              </div>
+              <div>
+                <!-- H3 SEO -->
+                <h3>Coiffeurs expérimentés à Malestroit</h3>
+                <p>Notre équipe cumule plus de 30 ans d'expérience collective. Formés régulièrement aux dernières tendances, nos coiffeurs maîtrisent toutes les techniques.</p>
+              </div>
+            </li>
+            <!-- Item 2 -->
+            <li class="why-item">
+              <div class="why-dot" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div>
+                <h3>Produits professionnels certifiés</h3>
+                <p>Nous n'utilisons que des produits de marques professionnelles agréées — respectueux de votre cuir chevelu et de la fibre capillaire.</p>
+              </div>
+            </li>
+            <!-- Item 3 -->
+            <li class="why-item">
+              <div class="why-dot" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+              </div>
+              <div>
+                <h3>Ambiance moderne et chaleureuse</h3>
+                <p>Un espace design et épuré, repensé en 2022, pour vous offrir confort et sérénité tout au long de votre rendez-vous.</p>
+              </div>
+            </li>
+            <!-- Item 4 -->
+            <li class="why-item">
+              <div class="why-dot" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <div>
+                <h3>Conseils personnalisés &amp; sur mesure</h3>
+                <p>Chaque client est unique. Nous prenons le temps d'échanger sur vos attentes lors d'un diagnostic capillaire avant chaque prestation.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GALLERY
+  ============================================================ -->
+  <section id="gallery" aria-labelledby="gallery-heading">
+    <div class="container">
+      <div class="gallery-header reveal">
+        <span class="section-tag">Notre galerie</span>
+        <h2 id="gallery-heading" class="section-title">Nos réalisations</h2>
+        <p class="section-lead">Un aperçu de notre savoir-faire — coupes, colorations et soins réalisés par l'équipe de l'Atelier Lumière.</p>
+      </div>
+
+      <div class="gallery-grid reveal reveal-delay-1" role="list" aria-label="Galerie photos de réalisations coiffure">
+
+        <div class="gallery-item" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=800&auto=format&fit=crop&q=80"
+            alt="Coiffure femme élégante réalisée par l'Atelier Lumière Malestroit"
+            loading="lazy" width="800" height="1000"
+          />
+        </div>
+        <div class="gallery-item" role="listitem">
+          <img
+            src="image-coiffeur-1.jpg"
+            alt="Balayage naturel et lumineux effectué à Malestroit"
+            loading="lazy" width="700" height="500"
+          />
+        </div>
+        <div class="gallery-item" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&auto=format&fit=crop&q=80"
+            alt="Coupe femme moderne et brushing dans un salon de Morbihan"
+            loading="lazy" width="600" height="500"
+          />
+        </div>
+        <div class="gallery-item" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&auto=format&fit=crop&q=80"
+            alt="Coupe homme dégradé soigné à l'Atelier Lumière"
+            loading="lazy" width="600" height="500"
+          />
+        </div>
+        <div class="gallery-item" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=700&auto=format&fit=crop&q=80"
+            alt="Soin capillaire professionnel et mise en beauté au salon Malestroit"
+            loading="lazy" width="700" height="500"
+          />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       LOCALISATION
+  ============================================================ -->
+  <section id="localisation" aria-labelledby="location-heading">
+    <div class="container">
+      <div class="location-grid">
+
+        <div class="reveal">
+          <span class="section-tag">Nous trouver</span>
+          <h2 id="location-heading" class="location-info" style="font-family:var(--ff-display);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:400;color:var(--c-violet);margin-bottom:.6rem;">
+            Notre salon à Malestroit
+          </h2>
+          <p class="location-info" style="color:var(--c-grey-500);font-size:.95rem;line-height:1.8;">
+            Facilement accessible depuis Vannes et les communes du Morbihan,
+            l'Atelier Lumière est situé en plein centre de Malestroit,
+            à proximité du parking municipal.
+          </p>
+
+          <div class="location-details">
+            <div class="location-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <strong>Adresse</strong>
+                12 Place du Bouffay, 56140 Malestroit
+              </div>
+            </div>
+
+            <div class="location-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.15h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.6a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16z"/></svg>
+              <div>
+                <strong>Téléphone</strong>
+                02 97 74 XX XX
+              </div>
+            </div>
+
+            <div class="location-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <div>
+                <strong>Horaires d'ouverture</strong>
+                <table class="horaires-table" aria-label="Horaires du salon">
+                  <tbody>
+                    <tr><td>Mardi – Vendredi</td><td>9h00 – 19h00</td></tr>
+                    <tr><td>Samedi</td><td>9h00 – 17h00</td></tr>
+                    <tr><td>Dimanche &amp; Lundi</td><td>Fermé</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Map placeholder -->
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1273.4663024590232!2d-2.3848463923196066!3d47.810282036687745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480fc0b0cd115973%3A0xa7a1926713980204!2sBorne%20de%20recharge%20Morbihan%20%C3%A9nergies!5e1!3m2!1sfr!2sfr!4v1773697075241!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT / FORMULAIRE
+  ============================================================ -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact-wrapper">
+
+        <!-- Aside -->
+        <div class="reveal">
+          <span class="section-tag">Nous contacter</span>
+          <h2 id="contact-heading" class="contact-aside">Prenez rendez-vous à l'Atelier Lumière</h2>
+          <p class="contact-aside" style="color:var(--c-grey-500);font-size:.95rem;line-height:1.85;margin-top:.8rem;">
+            Vous souhaitez réserver votre prochain soin de beauté dans notre salon de Malestroit ?
+            Remplissez le formulaire ci-contre ou contactez-nous directement.
+          </p>
+
+          <div class="contact-links">
+            <a href="tel:+33297740000" class="contact-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.15h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.6a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16z"/></svg>
+              02 97 74 XX XX
+            </a>
+            <a href="mailto:contact@atelier-lumiere-malestroit.fr" class="contact-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              contact@atelier-lumiere-malestroit.fr
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              @atelierlumieremalestroit
+            </a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="reveal reveal-delay-2">
+          <!--
+            Formulaire Freeform
+            Remplacez "INSERER_LIEN_FREEFORM_ICI" par l'URL fournie par votre compte Freeform.
+          -->
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/mzdjjwrj"
+            method="POST"
+            novalidate
+            aria-label="Formulaire de prise de rendez-vous"
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nom">Nom complet</label>
+                <input
+                  type="text"
+                  id="nom"
+                  name="nom"
+                  placeholder="Marie Dupont"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Adresse e-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="marie@exemple.fr"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telephone">Téléphone</label>
+                <input
+                  type="tel"
+                  id="telephone"
+                  name="telephone"
+                  placeholder="06 XX XX XX XX"
+                  autocomplete="tel"
+                />
+              </div>
+              <div class="form-group">
+                <label for="service">Prestation souhaitée</label>
+                <select id="service" name="service">
+                  <option value="" disabled selected>Choisir un service</option>
+                  <option value="coupe-femme">Coupe femme</option>
+                  <option value="coupe-homme">Coupe homme</option>
+                  <option value="coloration">Coloration</option>
+                  <option value="balayage">Balayage / Mèches</option>
+                  <option value="barbe">Taille de barbe</option>
+                  <option value="soins">Soins capillaires</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message (optionnel)</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Décrivez votre demande ou vos disponibilités…"
+              ></textarea>
+            </div>
+
+            <!-- Honeypot anti-spam -->
+            <input type="text" name="_honey" style="display:none" tabindex="-1" aria-hidden="true" />
+
+            <button type="submit" class="btn btn-primary form-submit">
+              Envoyer ma demande
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer id="footer" role="contentinfo" aria-label="Pied de page Atelier Lumière">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <p class="logo">Atelier Lumière</p>
+          <p>Votre salon de coiffure premium à Malestroit, Morbihan. Coupes, colorations et soins capillaires pour femmes et hommes.</p>
+          <div class="footer-social" aria-label="Réseaux sociaux">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Atelier Lumière">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook Atelier Lumière">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok Atelier Lumière">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav aria-label="Liens rapides footer">
+          <h4>Navigation</h4>
+          <ul role="list">
+            <li><a href="#about">Le salon</a></li>
+            <li><a href="#services">Nos services</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#localisation">Accès &amp; horaires</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Services -->
+        <nav aria-label="Services footer">
+          <h4>Services</h4>
+          <ul role="list">
+            <li><a href="#services">Coupe femme</a></li>
+            <li><a href="#services">Coupe homme</a></li>
+            <li><a href="#services">Coloration</a></li>
+            <li><a href="#services">Balayage</a></li>
+            <li><a href="#services">Taille de barbe</a></li>
+            <li><a href="#services">Soins capillaires</a></li>
+          </ul>
+        </nav>
+
+        <!-- Adresse -->
+        <div>
+          <h4>Informations</h4>
+          <address>
+            <strong style="color:#fff;display:block;margin-bottom:.5rem;">Atelier Lumière</strong>
+            12 Place du Bouffay<br />
+            56140 Malestroit<br />
+            Morbihan, Bretagne<br /><br />
+            <a href="tel:+33297740000" style="transition:color .3s;">02 97 74 XX XX</a><br />
+            <a href="mailto:contact@atelier-lumiere-malestroit.fr" style="transition:color .3s;">contact@atelier-lumiere-malestroit.fr</a>
+          </address>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <p>© 2025 Atelier Lumière · Salon de coiffure à Malestroit, Morbihan</p>
+        <p>
+          <a href="#">Mentions légales</a>
+          &nbsp;·&nbsp;
+          <a href="#">Politique de confidentialité</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script>
+    /* ── Navbar: scroll state ── */
+    const navbar = document.getElementById('navbar');
+    function updateNavbar() {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    }
+    window.addEventListener('scroll', updateNavbar, { passive: true });
+    updateNavbar();
+
+    /* ── Hamburger menu ── */
+    const hamburger   = document.getElementById('hamburger');
+    const mobileMenu  = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('active', isOpen);
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    // Close mobile menu when a link is clicked
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        hamburger.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    /* ── Scroll reveal (IntersectionObserver) ── */
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    /* ── Trigger hero reveals immediately ── */
+    document.querySelectorAll('#hero .reveal').forEach(el => {
+      setTimeout(() => el.classList.add('visible'), 200);
+    });
+
+    /* ── Smooth active nav link highlight ── */
+    const sections = document.querySelectorAll('section[id]');
+    const navLinksAll = document.querySelectorAll('.nav-links a:not(.nav-cta)');
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          navLinksAll.forEach(link => {
+            link.style.color = '';
+            if (link.getAttribute('href') === `#${id}`) {
+              link.style.color = 'var(--c-gold)';
+            }
+          });
+        }
+      });
+    }, { threshold: 0.4 });
+
+    sections.forEach(s => sectionObserver.observe(s));
+  </script>
+
+</body>
+</html>
